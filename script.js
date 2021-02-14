@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         【PBK】网课全解小助手
 // @namespace    PBKBin
-// @version      1.1.2
+// @version      1.1.3
 // @description  查看考试成绩，新版作业提取为Word
 // @author       PBK-B
 // @connect      cdn.jsdelivr.net
@@ -124,6 +124,10 @@ window.onload = function () {
       document.querySelector("#download_json").onclick = function () {
         // PBK 打印 JSON
         toJSONLog(helper["exportTiMu"]);
+        funDownload(
+          JSON.stringify(helper["exportTiMu"]),
+          "ImportQuestions.json"
+        );
       };
 
       document.querySelector("#helperNoticeBoard").innerHTML =
@@ -492,6 +496,21 @@ function toJSONLog(qjson) {
 
 function delHtmlTag(str) {
   return str.replace(/<[^>]+>/g, ""); //去掉所有的html标记
+}
+
+function funDownload(content, filename) {
+  // 创建隐藏的可下载链接
+  var eleLink = document.createElement("a");
+  eleLink.download = filename;
+  eleLink.style.display = "none";
+  // 字符内容转变成blob地址
+  var blob = new Blob([content]);
+  eleLink.href = URL.createObjectURL(blob);
+  // 触发点击
+  document.body.appendChild(eleLink);
+  eleLink.click();
+  // 然后移除
+  document.body.removeChild(eleLink);
 }
 
 // ___________ PBK Code Mode end ___________
