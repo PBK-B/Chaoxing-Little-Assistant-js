@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         【PBK】网课全解小助手
 // @namespace    PBKBin
-// @version      1.1.1
+// @version      1.1.2
 // @description  查看考试成绩，新版作业提取为Word
 // @author       PBK-B
 // @connect      cdn.jsdelivr.net
 // @connect      mooc.xxcheng.top
 // @resource     buildcss https://mooc.xxcheng.top/export/user.css
-// @resource     getInfo https://mooc.xxcheng.top/export/setting.json
+// @resource     getInfo https://raw.githubusercontent.com/PBK-B/Chaoxing-Little-Assistant-js/main/setting.json
 // @match        *://*.chaoxing.com/*
 // @match        *://*.edu.cn/*
 // @run-at       document-end
