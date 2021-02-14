@@ -1,4 +1,7 @@
 # 网课全解小助手
-> 加载中…
+> 安装暴力候：<https://violentmonkey.github.io/>
 
-安装地址：```https://raw.githubusercontent.com/PBK-B/Chaoxing-Little-Assistant-js/main/script.js```
+脚本安装地址：
+```
+https://raw.githubusercontent.com/PBK-B/Chaoxing-Little-Assistant-js/main/script.js
+```
