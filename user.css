@@ -1,0 +1,139 @@
+.circle-side{
+    position: relative;
+
+    width: 25px;
+    height: 25px;
+
+    -webkit-animation: circle infinite .75s linear;
+       -moz-animation: circle infinite .75s linear;
+         -o-animation: circle infinite .75s linear;
+            animation: circle infinite .75s linear;
+
+    border: 2px solid #ffffff;
+    border-top-color: rgba(0, 0, 0, .2);
+    border-right-color: rgba(0, 0, 0, .2);
+    border-bottom-color: rgba(0, 0, 0, .2);
+    border-radius: 100%;
+}
+@-webkit-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-moz-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-o-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+button {
+	width: 150px;
+	height: 30px;
+	border-width: 0px;
+	border-radius: 3px;
+	background: #1E90FF;
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei;
+	color: white;
+	font-size: 14px;
+}
+button:hover {
+	background: #5599FF;
+}
+#createDiv{
+	width: 380px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99999;
+	background-color: rgb(250, 235, 215);
+	overflow-x: auto;
+	box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+	border-radius: 2px;
+}
+.tableShow{
+	font-size: 12px;
+	border-color: rgb(170, 85, 255);
+	border-radius: 3px;
+	text-align: center;
+}
+.divShow{
+	max-height: 300px;
+	overflow-y: auto;
+}
+#download_excel{
+	margin: 3px;
+	display: none;
+}
+#midbtn{
+	position:fixed;
+	height:36px;
+	width:130px;
+	font-size:16px;
+	box-shadow:rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+}
+tbody tr:not(:first-child):hover{
+	background-color: #7FFF00;
+}
+tbody tr:not( :first-child) :nth-child(2){
+	text-align: left;
+}
